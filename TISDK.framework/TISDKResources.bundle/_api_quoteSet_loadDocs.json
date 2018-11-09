@@ -1,0 +1,42 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "LoadedDocuments": {
+      "id": "/properties/LoadedDocuments",
+      "type": "array",
+      "items": {
+        "id": "/properties/LoadedDocuments/items",
+        "type": "object",
+        "properties": {
+          "Url": {
+            "id": "/properties/LoadedDocuments/items/properties/Url",
+            "type": "string",
+            "title": "The Url Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "DocumentType": {
+            "id": "/properties/LoadedDocuments/items/properties/DocumentType",
+            "type": "string",
+            "title": "The Documenttype Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "Number": {
+            "id": "/properties/LoadedDocuments/items/properties/Number",
+            "type": "string",
+            "title": "The Number Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          }
+        }
+      }
+    }
+  }
+}
+

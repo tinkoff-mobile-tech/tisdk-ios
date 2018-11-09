@@ -1,0 +1,60 @@
+
+
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "OsagoPremium": {
+            "id": "/properties/OsagoPremium",
+            "type": "number",
+            "title": "The Osagopremium Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "KaskoPremium": {
+            "id": "/properties/KaskoPremium",
+            "type": "number",
+            "title": "The Kaskopremium Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "TotalPremium": {
+            "id": "/properties/TotalPremium",
+            "type": "number",
+            "title": "The Totalpremium Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "KBM": {
+            "id": "/properties/KBM",
+            "type": "number",
+            "title": "The Kbm Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "ResultCode": {
+            "id": "/properties/ResultCode",
+            "type": "string",
+            "title": "The Resultcode Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "ResultMessage": {
+            "id": "/properties/ResultMessage",
+            "type": "string",
+            "title": "The Resultmessage Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "IntegrationId": {
+            "id": "/properties/IntegrationId",
+            "type": "string",
+            "title": "The Integrationid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        }
+    }
+}
+

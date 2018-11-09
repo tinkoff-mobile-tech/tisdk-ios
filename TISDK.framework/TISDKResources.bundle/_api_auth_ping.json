@@ -1,0 +1,25 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "ExpiresIn": {
+      "id": "/properties/ExpiresIn",
+      "type": "number",
+      "title": "The Expiresin Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0
+    },
+    "RefreshExpiresIn": {
+      "id": "/properties/RefreshExpiresIn",
+      "type": "number",
+      "title": "The Refreshexpiresin Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0
+    }
+  }
+}
+

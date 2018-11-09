@@ -1,0 +1,53 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "Need": {
+      "id": "/properties/Need",
+      "type": "boolean",
+      "title": "The Need Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false
+    },
+    "TicketExisted": {
+      "id": "/properties/TicketExisted",
+      "type": "boolean",
+      "title": "The Ticketexisted Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false
+    },
+    "Serial": {
+      "id": "/properties/Serial",
+      "type": "string",
+      "title": "The Serial Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "Number": {
+      "id": "/properties/Number",
+      "type": "string",
+      "title": "The Number Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "DateNextTO": {
+      "id": "/properties/DateNextTO",
+      "type": "string",
+      "title": "The Datenextto Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "TicketDiagnosticDate": {
+      "id": "/properties/TicketDiagnosticDate",
+      "type": "string",
+      "title": "The Ticketdiagnosticdate Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    }
+  }
+}
+

@@ -1,0 +1,75 @@
+
+
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "array",
+    "items": {
+        "id": "http://example.com/example.json/items",
+        "type": "object",
+        "properties": {
+            "AutoBox": {
+                "id": "http://example.com/example.json/items/properties/AutoBox",
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "id": "http://example.com/example.json/items/properties/AutoBox/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    },
+                    "Name": {
+                        "id": "http://example.com/example.json/items/properties/AutoBox/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    }
+                }
+            },
+            "Engine": {
+                "id": "http://example.com/example.json/items/properties/Engine",
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "id": "http://example.com/example.json/items/properties/Engine/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    },
+                    "Name": {
+                        "id": "http://example.com/example.json/items/properties/Engine/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    }
+                }
+            },
+            "GeerBox": {
+                "id": "http://example.com/example.json/items/properties/GeerBox",
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "id": "http://example.com/example.json/items/properties/GeerBox/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    },
+                    "Name": {
+                        "id": "http://example.com/example.json/items/properties/GeerBox/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,29 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "array",
+  "items": {
+    "id": "http://example.com/example.json/items",
+    "type": "object",
+    "properties": {
+      "Id": {
+        "id": "http://example.com/example.json/items/properties/Id",
+        "type": "number",
+        "title": "The Id Schema.",
+        "description": "An explanation about the purpose of this instance.",
+        "default": 0
+      },
+      "Extension": {
+        "id": "http://example.com/example.json/items/properties/Extension",
+        "type": "string",
+        "title": "The Extension Schema.",
+        "description": "An explanation about the purpose of this instance.",
+        "default": ""
+      }
+    }
+  }
+}
+

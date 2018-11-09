@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "DeveloperMessage": {
+      "default": "string", 
+      "description": "An explanation about the purpose of this instance.", 
+      "id": "/properties/DeveloperMessage", 
+      "title": "The developermessage schema", 
+      "type": "string"
+    }, 
+    "Domain": {
+      "default": "string", 
+      "description": "An explanation about the purpose of this instance.", 
+      "id": "/properties/Domain", 
+      "title": "The domain schema", 
+      "type": "string"
+    }, 
+    "ResultCode": {
+      "default": "string", 
+      "description": "An explanation about the purpose of this instance.", 
+      "id": "/properties/ResultCode", 
+      "title": "The resultcode schema", 
+      "type": "string"
+    }, 
+    "UserMessage": {
+      "default": "string", 
+      "description": "An explanation about the purpose of this instance.", 
+      "id": "/properties/UserMessage", 
+      "title": "The usermessage schema", 
+      "type": "string"
+    }, 
+    "ValidationErrors": {
+      "id": "/properties/ValidationErrors", 
+      "items": {
+        "id": "/properties/ValidationErrors/items", 
+        "properties": {
+          "DeveloperMessage": {
+            "default": "string", 
+            "description": "An explanation about the purpose of this instance.", 
+            "id": "/properties/ValidationErrors/items/properties/DeveloperMessage", 
+            "title": "The developermessage schema", 
+            "type": "string"
+          }, 
+          "Field": {
+            "default": "string", 
+            "description": "An explanation about the purpose of this instance.", 
+            "id": "/properties/ValidationErrors/items/properties/Field", 
+            "title": "The field schema", 
+            "type": "string"
+          }, 
+          "UserMessage": {
+            "default": "string", 
+            "description": "An explanation about the purpose of this instance.", 
+            "id": "/properties/ValidationErrors/items/properties/UserMessage", 
+            "title": "The usermessage schema", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "type": "array"
+    }
+  }, 
+  "type": "object"
+}

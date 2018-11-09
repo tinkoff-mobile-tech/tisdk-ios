@@ -1,0 +1,49 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "SetNumber": {
+      "id": "/properties/SetNumber",
+      "type": "string",
+      "title": "The Setnumber Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "SetClientNumber": {
+      "id": "/properties/SetClientNumber",
+      "type": "string",
+      "title": "The Setclientnumber Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "Policies": {
+      "id": "/properties/Policies",
+      "type": "array",
+      "items": {
+        "id": "/properties/Policies/items",
+        "type": "object",
+        "properties": {
+          "QuoteNumber": {
+            "id": "/properties/Policies/items/properties/QuoteNumber",
+            "type": "string",
+            "title": "The Quotenumber Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "TermNumber": {
+            "id": "/properties/Policies/items/properties/TermNumber",
+            "type": "number",
+            "title": "The Termnumber Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          }
+        }
+      }
+    }
+  }
+}
+

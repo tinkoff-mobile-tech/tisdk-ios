@@ -1,0 +1,39 @@
+
+
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "Id": {
+            "id": "/properties/Id",
+            "type": "number",
+            "title": "The Id Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "Price": {
+            "id": "/properties/Price",
+            "type": "number",
+            "title": "The Price Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "GroupId": {
+            "id": "/properties/GroupId",
+            "type": "string",
+            "title": "The Groupid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "RsaCode": {
+            "id": "/properties/RsaCode",
+            "type": "string",
+            "title": "The Rsacode Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        }
+    }
+}
+

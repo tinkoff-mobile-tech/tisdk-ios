@@ -1,0 +1,43 @@
+
+
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "array",
+    "items": {
+        "id": "http://example.com/example.json/items",
+        "type": "object",
+        "properties": {
+            "ModelId": {
+                "id": "http://example.com/example.json/items/properties/ModelId",
+                "type": "number",
+                "title": "The Modelid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0
+            },
+            "MakerId": {
+                "id": "http://example.com/example.json/items/properties/MakerId",
+                "type": "number",
+                "title": "The Makerid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0
+            },
+            "Maker": {
+                "id": "http://example.com/example.json/items/properties/Maker",
+                "type": "string",
+                "title": "The Maker Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+            },
+            "Model": {
+                "id": "http://example.com/example.json/items/properties/Model",
+                "type": "string",
+                "title": "The Model Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+            }
+        }
+    }
+}
+

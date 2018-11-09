@@ -1,0 +1,16 @@
+
+
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://example.com/example.json",
+    "type": "array",
+    "items": {
+        "id": "http://example.com/example.json/items",
+        "type": "number",
+        "title": "The 0 Schema.",
+        "description": "An explanation about the purpose of this instance.",
+        "default": 0
+    }
+}
+

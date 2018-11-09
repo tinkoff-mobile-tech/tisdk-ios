@@ -1,0 +1,18 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "id": "/properties/AccessToken",
+      "type": "string",
+      "title": "The Accesstoken Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    }
+  }
+}
+

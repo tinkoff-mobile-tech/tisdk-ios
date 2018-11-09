@@ -1,0 +1,53 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "AccessToken": {
+      "id": "/properties/AccessToken",
+      "type": "string",
+      "title": "The Accesstoken Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "ExpiresIn": {
+      "id": "/properties/ExpiresIn",
+      "type": "number",
+      "title": "The Expiresin Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0
+    },
+    "RefreshToken": {
+      "id": "/properties/RefreshToken",
+      "type": "string",
+      "title": "The Refreshtoken Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "RefreshExpiresIn": {
+      "id": "/properties/RefreshExpiresIn",
+      "type": "number",
+      "title": "The Refreshexpiresin Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0
+    },
+    "EncryptionKey": {
+      "id": "/properties/EncryptionKey",
+      "type": "string",
+      "title": "The Encryptionkey Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": ""
+    },
+    "IsNewUser": {
+      "id": "/properties/IsNewUser",
+      "type": "boolean",
+      "title": "The Isnewuser Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false
+    }
+  }
+}
+

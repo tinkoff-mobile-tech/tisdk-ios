@@ -1,0 +1,2806 @@
+
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "IsRequiredDocumentsScan": {
+      "id": "/properties/IsRequiredDocumentsScan",
+      "type": "boolean",
+      "title": "The Isrequireddocumentsscan Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false
+    },
+    "ErrorChecks": {
+      "id": "/properties/ErrorChecks",
+      "type": "array",
+      "items": {
+        "id": "/properties/ErrorChecks/items",
+        "type": "object",
+        "properties": {
+          "SubjectNumber": {
+            "id": "/properties/ErrorChecks/items/properties/SubjectNumber",
+            "type": "number",
+            "title": "The Subjectnumber Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          },
+          "CheckId": {
+            "id": "/properties/ErrorChecks/items/properties/CheckId",
+            "type": "number",
+            "title": "The Checkid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          },
+          "RsaResponse": {
+            "id": "/properties/ErrorChecks/items/properties/RsaResponse",
+            "type": "object",
+            "properties": {
+              "IsFound": {
+                "id": "/properties/ErrorChecks/items/properties/RsaResponse/properties/IsFound",
+                "type": "boolean",
+                "title": "The Isfound Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "IsChecked": {
+                "id": "/properties/ErrorChecks/items/properties/RsaResponse/properties/IsChecked",
+                "type": "boolean",
+                "title": "The Ischecked Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "FailedFields": {
+                "id": "/properties/ErrorChecks/items/properties/RsaResponse/properties/FailedFields",
+                "type": "array",
+                "items": {
+                  "id": "/properties/ErrorChecks/items/properties/RsaResponse/properties/FailedFields/items",
+                  "type": "string",
+                  "title": "The 0 Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Deal": {
+      "id": "/properties/Deal",
+      "type": "object",
+      "properties": {
+        "Id": {
+          "id": "/properties/Deal/properties/Id",
+          "type": "string",
+          "title": "The Id Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "ClientCode": {
+          "id": "/properties/Deal/properties/ClientCode",
+          "type": "string",
+          "title": "The Clientcode Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "SecretCode": {
+          "id": "/properties/Deal/properties/SecretCode",
+          "type": "string",
+          "title": "The Secretcode Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "InsurerNumber": {
+          "id": "/properties/Deal/properties/InsurerNumber",
+          "type": "number",
+          "title": "The Insurernumber Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0
+        },
+        "VehicleOwnerNumber": {
+          "id": "/properties/Deal/properties/VehicleOwnerNumber",
+          "type": "number",
+          "title": "The Vehicleownernumber Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0
+        },
+        "Summary": {
+          "id": "/properties/Deal/properties/Summary",
+          "type": "object",
+          "properties": {
+            "EffectiveDate": {
+              "id": "/properties/Deal/properties/Summary/properties/EffectiveDate",
+              "type": "string",
+              "title": "The Effectivedate Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "IsEffectiveDateApproved": {
+              "id": "/properties/Deal/properties/Summary/properties/IsEffectiveDateApproved",
+              "type": "boolean",
+              "title": "The Iseffectivedateapproved Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false
+            },
+            "ProductCode": {
+              "id": "/properties/Deal/properties/Summary/properties/ProductCode",
+              "type": "string",
+              "title": "The Productcode Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "VehicleOwnerRegistrationRegion": {
+              "id": "/properties/Deal/properties/Summary/properties/VehicleOwnerRegistrationRegion",
+              "type": "string",
+              "title": "The Vehicleownerregistrationregion Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "VehicleOwnerRegistrationCity": {
+              "id": "/properties/Deal/properties/Summary/properties/VehicleOwnerRegistrationCity",
+              "type": "string",
+              "title": "The Vehicleownerregistrationcity Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "VehicleUseRegion": {
+              "id": "/properties/Deal/properties/Summary/properties/VehicleUseRegion",
+              "type": "string",
+              "title": "The Vehicleuseregion Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "InsurerRegistrationRegion": {
+              "id": "/properties/Deal/properties/Summary/properties/InsurerRegistrationRegion",
+              "type": "string",
+              "title": "The Insurerregistrationregion Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "Segment": {
+              "id": "/properties/Deal/properties/Summary/properties/Segment",
+              "type": "string",
+              "title": "The Segment Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "Note": {
+              "id": "/properties/Deal/properties/Summary/properties/Note",
+              "type": "string",
+              "title": "The Note Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            }
+          }
+        },
+        "Contacts": {
+          "id": "/properties/Deal/properties/Contacts",
+          "type": "array",
+          "items": {
+            "id": "/properties/Deal/properties/Contacts/items",
+            "type": "object",
+            "properties": {
+              "SiebelId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/SiebelId",
+                "type": "string",
+                "title": "The Siebelid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "SubjectNumber": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/SubjectNumber",
+                "type": "number",
+                "title": "The Subjectnumber Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0
+              },
+              "Errors": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Errors",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Errors/items",
+                  "type": "object",
+                  "properties": {
+                    "Code": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Errors/items/properties/Code",
+                      "type": "string",
+                      "title": "The Code Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Descr": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Errors/items/properties/Descr",
+                      "type": "string",
+                      "title": "The Descr Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                }
+              },
+              "UserId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/UserId",
+                "type": "string",
+                "title": "The Userid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "ContactSalesForceLeadId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/ContactSalesForceLeadId",
+                "type": "string",
+                "title": "The Contactsalesforceleadid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "ContactSalesForceClientId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/ContactSalesForceClientId",
+                "type": "string",
+                "title": "The Contactsalesforceclientid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "LastName": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/LastName",
+                "type": "string",
+                "title": "The Lastname Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "FirstName": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/FirstName",
+                "type": "string",
+                "title": "The Firstname Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "MiddleName": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/MiddleName",
+                "type": "string",
+                "title": "The Middlename Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "FirstNameEng": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/FirstNameEng",
+                "type": "string",
+                "title": "The Firstnameeng Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "LastNameEng": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/LastNameEng",
+                "type": "string",
+                "title": "The Lastnameeng Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Birthdate": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Birthdate",
+                "type": "string",
+                "title": "The Birthdate Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Citizenship": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Citizenship",
+                "type": "string",
+                "title": "The Citizenship Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "PlaceOfBirth": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/PlaceOfBirth",
+                "type": "string",
+                "title": "The Placeofbirth Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Gender": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Gender",
+                "type": "string",
+                "title": "The Gender Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "IsTraveller": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsTraveller",
+                "type": "boolean",
+                "title": "The Istraveller Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "SubdivisionCode": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/SubdivisionCode",
+                "type": "string",
+                "title": "The Subdivisioncode Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Role": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Role",
+                "type": "string",
+                "title": "The Role Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "TravellerRelationship": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/TravellerRelationship",
+                "type": "string",
+                "title": "The Travellerrelationship Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "FullName": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/FullName",
+                "type": "string",
+                "title": "The Fullname Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "IsKASKO": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsKASKO",
+                "type": "boolean",
+                "title": "The Iskasko Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "IsOSAGO": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsOSAGO",
+                "type": "boolean",
+                "title": "The Isosago Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "NumberOfCASCOLosses": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/NumberOfCASCOLosses",
+                "type": "number",
+                "title": "The Numberofcascolosses Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0
+              },
+              "IsFastContact": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsFastContact",
+                "type": "boolean",
+                "title": "The Isfastcontact Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "PublicIds": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds/items",
+                  "type": "object",
+                  "properties": {
+                    "PublicId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds/items/properties/PublicId",
+                      "type": "string",
+                      "title": "The Publicid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Role": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds/items/properties/Role",
+                      "type": "string",
+                      "title": "The Role Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "AccountNumber": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds/items/properties/AccountNumber",
+                      "type": "string",
+                      "title": "The Accountnumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Department": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/PublicIds/items/properties/Department",
+                      "type": "string",
+                      "title": "The Department Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                }
+              },
+              "PublicId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/PublicId",
+                "type": "string",
+                "title": "The Publicid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "TbClientId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/TbClientId",
+                "type": "string",
+                "title": "The Tbclientid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Email": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Email",
+                "type": "string",
+                "title": "The Email Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "EmailSecondary": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/EmailSecondary",
+                "type": "string",
+                "title": "The Emailsecondary Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Segments": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Segments",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Segments/items",
+                  "type": "object",
+                  "properties": {
+                    "PublicId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Segments/items/properties/PublicId",
+                      "type": "string",
+                      "title": "The Publicid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "MobilePhone": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Segments/items/properties/MobilePhone",
+                      "type": "string",
+                      "title": "The Mobilephone Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "InSegment": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Segments/items/properties/InSegment",
+                      "type": "boolean",
+                      "title": "The Insegment Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "Segment": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Segments/items/properties/Segment",
+                      "type": "string",
+                      "title": "The Segment Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                }
+              },
+              "AccountRole": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/AccountRole",
+                "type": "string",
+                "title": "The Accountrole Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "BusinessRole": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/BusinessRole",
+                "type": "string",
+                "title": "The Businessrole Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "AccountNumber": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/AccountNumber",
+                "type": "string",
+                "title": "The Accountnumber Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Department": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Department",
+                "type": "string",
+                "title": "The Department Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Addresses": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Addresses",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items",
+                  "type": "object",
+                  "properties": {
+                    "AddressSfId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/AddressSfId",
+                      "type": "string",
+                      "title": "The Addresssfid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "AddressId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/AddressId",
+                      "type": "string",
+                      "title": "The Addressid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "СontactAddressId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/СontactAddressId",
+                      "type": "string",
+                      "title": "The Сontactaddressid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "AddressType": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/AddressType",
+                      "type": "string",
+                      "title": "The Addresstype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsPrimary": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/IsPrimary",
+                      "type": "boolean",
+                      "title": "The Isprimary Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "IsActive": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/IsActive",
+                      "type": "boolean",
+                      "title": "The Isactive Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "Country": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/Country",
+                      "type": "string",
+                      "title": "The Country Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Region": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/Region",
+                      "type": "string",
+                      "title": "The Region Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "RegionCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/RegionCode",
+                      "type": "string",
+                      "title": "The Regioncode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "PopulatedCenter": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/PopulatedCenter",
+                      "type": "string",
+                      "title": "The Populatedcenter Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "PopulatedCenterCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/PopulatedCenterCode",
+                      "type": "string",
+                      "title": "The Populatedcentercode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "City": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/City",
+                      "type": "string",
+                      "title": "The City Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "CityName": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/CityName",
+                      "type": "string",
+                      "title": "The Cityname Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "CityCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/CityCode",
+                      "type": "string",
+                      "title": "The Citycode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "District": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/District",
+                      "type": "string",
+                      "title": "The District Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "DistrictCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/DistrictCode",
+                      "type": "string",
+                      "title": "The Districtcode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Street": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/Street",
+                      "type": "string",
+                      "title": "The Street Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "StreetCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/StreetCode",
+                      "type": "string",
+                      "title": "The Streetcode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Building": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/Building",
+                      "type": "string",
+                      "title": "The Building Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "BuildingCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/BuildingCode",
+                      "type": "string",
+                      "title": "The Buildingcode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Flat": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/Flat",
+                      "type": "string",
+                      "title": "The Flat Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "SubwayStation": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/SubwayStation",
+                      "type": "string",
+                      "title": "The Subwaystation Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "SubwayStationLine": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/SubwayStationLine",
+                      "type": "string",
+                      "title": "The Subwaystationline Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsPropertyAddress": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Addresses/items/properties/IsPropertyAddress",
+                      "type": "boolean",
+                      "title": "The Ispropertyaddress Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    }
+                  }
+                }
+              },
+              "Passports": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Passports",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items",
+                  "type": "object",
+                  "properties": {
+                    "DocumentSfId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/DocumentSfId",
+                      "type": "string",
+                      "title": "The Documentsfid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "DocumentId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/DocumentId",
+                      "type": "string",
+                      "title": "The Documentid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "DocumentType": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/DocumentType",
+                      "type": "string",
+                      "title": "The Documenttype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Series": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/Series",
+                      "type": "string",
+                      "title": "The Series Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Number": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/Number",
+                      "type": "string",
+                      "title": "The Number Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IssuedBy": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/IssuedBy",
+                      "type": "string",
+                      "title": "The Issuedby Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "DateIssue": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/DateIssue",
+                      "type": "string",
+                      "title": "The Dateissue Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "SubdivisionCode": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/SubdivisionCode",
+                      "type": "string",
+                      "title": "The Subdivisioncode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsActive": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/IsActive",
+                      "type": "boolean",
+                      "title": "The Isactive Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "ValidTo": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/ValidTo",
+                      "type": "string",
+                      "title": "The Validto Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "BirthPlace": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Passports/items/properties/BirthPlace",
+                      "type": "string",
+                      "title": "The Birthplace Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                }
+              },
+              "Phones": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Phones",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items",
+                  "type": "object",
+                  "properties": {
+                    "SfId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/SfId",
+                      "type": "string",
+                      "title": "The Sfid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "GwId": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/GwId",
+                      "type": "string",
+                      "title": "The Gwid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Value": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/Value",
+                      "type": "string",
+                      "title": "The Value Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Type": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/Type",
+                      "type": "string",
+                      "title": "The Type Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsPrimary": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/IsPrimary",
+                      "type": "boolean",
+                      "title": "The Isprimary Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "IsActive": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Phones/items/properties/IsActive",
+                      "type": "boolean",
+                      "title": "The Isactive Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    }
+                  }
+                }
+              },
+              "AccountXml": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/AccountXml",
+                "type": "string",
+                "title": "The Accountxml Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Statuses": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/Statuses",
+                "type": "array",
+                "items": {
+                  "id": "/properties/Deal/properties/Contacts/items/properties/Statuses/items",
+                  "type": "object",
+                  "properties": {
+                    "Value": {
+                      "id": "/properties/Deal/properties/Contacts/items/properties/Statuses/items/properties/Value",
+                      "type": "string",
+                      "title": "The Value Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                }
+              },
+              "MobilePhone": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/MobilePhone",
+                "type": "string",
+                "title": "The Mobilephone Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "IsTbClient": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsTbClient",
+                "type": "boolean",
+                "title": "The Istbclient Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "IsTbEmployee": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsTbEmployee",
+                "type": "boolean",
+                "title": "The Istbemployee Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "IsTbDepartment": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/IsTbDepartment",
+                "type": "boolean",
+                "title": "The Istbdepartment Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false
+              },
+              "EOsagoInsurerCheckId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/EOsagoInsurerCheckId",
+                "type": "string",
+                "title": "The Eosagoinsurercheckid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "EOsagoOwnerCheckId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/EOsagoOwnerCheckId",
+                "type": "string",
+                "title": "The Eosagoownercheckid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "EOsagoDriverCheckId": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/EOsagoDriverCheckId",
+                "type": "string",
+                "title": "The Eosagodrivercheckid Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "DateOfFIDL": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/DateOfFIDL",
+                "type": "string",
+                "title": "The Dateoffidl Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "VehicleRoles": {
+                "id": "/properties/Deal/properties/Contacts/items/properties/VehicleRoles",
+                "type": "object",
+                "properties": {
+                  "id": "kamchatkabear",
+                  "title": "Empty Object",
+                  "description": "This accepts anything, as long as it's valid JSON."
+                }
+              }
+            }
+          }
+        },
+        "VehicleDetails": {
+          "id": "/properties/Deal/properties/VehicleDetails",
+          "type": "object",
+          "properties": {
+            "Id": {
+              "id": "/properties/Deal/properties/VehicleDetails/properties/Id",
+              "type": "string",
+              "title": "The Id Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "EosagoCheckId": {
+              "id": "/properties/Deal/properties/VehicleDetails/properties/EosagoCheckId",
+              "type": "string",
+              "title": "The Eosagocheckid Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "Errors": {
+              "id": "/properties/Deal/properties/VehicleDetails/properties/Errors",
+              "type": "array",
+              "items": {
+                "id": "/properties/Deal/properties/VehicleDetails/properties/Errors/items",
+                "type": "object",
+                "properties": {
+                  "Code": {
+                    "id": "/properties/Deal/properties/VehicleDetails/properties/Errors/items/properties/Code",
+                    "type": "string",
+                    "title": "The Code Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "Descr": {
+                    "id": "/properties/Deal/properties/VehicleDetails/properties/Errors/items/properties/Descr",
+                    "type": "string",
+                    "title": "The Descr Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  }
+                }
+              }
+            },
+            "VehicleReferenceInfo": {
+              "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo",
+              "type": "object",
+              "properties": {
+                "VehicleReferenceDetails": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails",
+                  "type": "object",
+                  "properties": {
+                    "VehicleType": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/VehicleType",
+                      "type": "string",
+                      "title": "The Vehicletype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "VehicleTypeId": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/VehicleTypeId",
+                      "type": "string",
+                      "title": "The Vehicletypeid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Make": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/Make",
+                      "type": "string",
+                      "title": "The Make Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "MakeId": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/MakeId",
+                      "type": "string",
+                      "title": "The Makeid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Model": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/Model",
+                      "type": "string",
+                      "title": "The Model Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ModelId": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/ModelId",
+                      "type": "string",
+                      "title": "The Modelid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "RateGroup": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/RateGroup",
+                      "type": "number",
+                      "title": "The Rategroup Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "VehicleAvgPrice": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/VehicleAvgPrice",
+                      "type": "number",
+                      "title": "The Vehicleavgprice Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "Modification": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/Modification",
+                      "type": "string",
+                      "title": "The Modification Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "CaseAndDoors": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/CaseAndDoors",
+                      "type": "string",
+                      "title": "The Caseanddoors Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "KppName": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/KppName",
+                      "type": "string",
+                      "title": "The Kppname Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "KppId": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/KppId",
+                      "type": "string",
+                      "title": "The Kppid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Category": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/Category",
+                      "type": "string",
+                      "title": "The Category Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EngineTypeName": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/EngineTypeName",
+                      "type": "string",
+                      "title": "The Enginetypename Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EngineHorsepower": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/EngineHorsepower",
+                      "type": "string",
+                      "title": "The Enginehorsepower Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EnginePwrKwt": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/EnginePwrKwt",
+                      "type": "string",
+                      "title": "The Enginepwrkwt Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EngVol": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/EngVol",
+                      "type": "string",
+                      "title": "The Engvol Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "RamiCode": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/RamiCode",
+                      "type": "string",
+                      "title": "The Ramicode Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "MaxWeight": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/MaxWeight",
+                      "type": "number",
+                      "title": "The Maxweight Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "MaxSeats": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/MaxSeats",
+                      "type": "number",
+                      "title": "The Maxseats Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "CaseTypeName": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceDetails/properties/CaseTypeName",
+                      "type": "string",
+                      "title": "The Casetypename Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "VehicleReferenceId": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleReferenceInfo/properties/VehicleReferenceId",
+                  "type": "string",
+                  "title": "The Vehiclereferenceid Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                }
+              }
+            },
+            "VehicleLegalInfo": {
+              "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo",
+              "type": "object",
+              "properties": {
+                "IsChangeNumAgg": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsChangeNumAgg",
+                  "type": "boolean",
+                  "title": "The Ischangenumagg Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "CountryOfRegistration": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/CountryOfRegistration",
+                  "type": "string",
+                  "title": "The Countryofregistration Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "ChassisNumber": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/ChassisNumber",
+                  "type": "string",
+                  "title": "The Chassisnumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "IsCustomCategory": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsCustomCategory",
+                  "type": "boolean",
+                  "title": "The Iscustomcategory Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "IsKeyless": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsKeyless",
+                  "type": "boolean",
+                  "title": "The Iskeyless Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "IsUsedWithTrailer": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsUsedWithTrailer",
+                  "type": "boolean",
+                  "title": "The Isusedwithtrailer Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "KuzovNumber": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/KuzovNumber",
+                  "type": "string",
+                  "title": "The Kuzovnumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "MaximumCost": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/MaximumCost",
+                  "type": "number",
+                  "title": "The Maximumcost Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "Mileage": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Mileage",
+                  "type": "number",
+                  "title": "The Mileage Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "MinimumCost": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/MinimumCost",
+                  "type": "number",
+                  "title": "The Minimumcost Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "NumberOfOwners": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/NumberOfOwners",
+                  "type": "number",
+                  "title": "The Numberofowners Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "OriginalMarkModel": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/OriginalMarkModel",
+                  "type": "string",
+                  "title": "The Originalmarkmodel Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "RegistrationNumber": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/RegistrationNumber",
+                  "type": "string",
+                  "title": "The Registrationnumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "IsRegistrationNumberNonStandart": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsRegistrationNumberNonStandart",
+                  "type": "boolean",
+                  "title": "The Isregistrationnumbernonstandart Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "SourceAcquisition": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/SourceAcquisition",
+                  "type": "string",
+                  "title": "The Sourceacquisition Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "VehicleCost": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleCost",
+                  "type": "number",
+                  "title": "The Vehiclecost Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "VehicleUsage": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleUsage",
+                  "type": "string",
+                  "title": "The Vehicleusage Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "VehicleUseRegion": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleUseRegion",
+                  "type": "string",
+                  "title": "The Vehicleuseregion Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "VehicleUseRegionId": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleUseRegionId",
+                  "type": "string",
+                  "title": "The Vehicleuseregionid Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "City": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/City",
+                  "type": "string",
+                  "title": "The City Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "Year": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Year",
+                  "type": "string",
+                  "title": "The Year Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "IsRightHandDrive": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsRightHandDrive",
+                  "type": "boolean",
+                  "title": "The Isrighthanddrive Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "NumberOfKeys": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/NumberOfKeys",
+                  "type": "number",
+                  "title": "The Numberofkeys Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "VIN": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VIN",
+                  "type": "string",
+                  "title": "The Vin Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "IsCustomVIN": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsCustomVIN",
+                  "type": "boolean",
+                  "title": "The Iscustomvin Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "RsaCode": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/RsaCode",
+                  "type": "number",
+                  "title": "The Rsacode Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "VehicleDocument": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument",
+                  "type": "array",
+                  "items": {
+                    "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument/items",
+                    "type": "object",
+                    "properties": {
+                      "DocumentType": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument/items/properties/DocumentType",
+                        "type": "string",
+                        "title": "The Documenttype Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "DocumentSeries": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument/items/properties/DocumentSeries",
+                        "type": "string",
+                        "title": "The Documentseries Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "DocumentNumber": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument/items/properties/DocumentNumber",
+                        "type": "string",
+                        "title": "The Documentnumber Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "DocumentIssued": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleDocument/items/properties/DocumentIssued",
+                        "type": "string",
+                        "title": "The Documentissued Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      }
+                    }
+                  }
+                },
+                "Immobilazer": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Immobilazer",
+                  "type": "object",
+                  "properties": {
+                    "Description": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Immobilazer/properties/Description",
+                      "type": "string",
+                      "title": "The Description Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Name": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Immobilazer/properties/Name",
+                      "type": "string",
+                      "title": "The Name Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "StartDate": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Immobilazer/properties/StartDate",
+                      "type": "string",
+                      "title": "The Startdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ValidityDate": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Immobilazer/properties/ValidityDate",
+                      "type": "string",
+                      "title": "The Validitydate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "TechInspectionInfo": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo",
+                  "type": "object",
+                  "properties": {
+                    "SourceInfo": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/SourceInfo",
+                      "type": "string",
+                      "title": "The Sourceinfo Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "TechDocumentType": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/TechDocumentType",
+                      "type": "string",
+                      "title": "The Techdocumenttype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "TechInspSeries": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/TechInspSeries",
+                      "type": "string",
+                      "title": "The Techinspseries Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "TechInspNumber": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/TechInspNumber",
+                      "type": "string",
+                      "title": "The Techinspnumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "TechInspIssuedDate": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/TechInspIssuedDate",
+                      "type": "string",
+                      "title": "The Techinspissueddate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "TechInspExpirationDate": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/TechInspectionInfo/properties/TechInspExpirationDate",
+                      "type": "string",
+                      "title": "The Techinspexpirationdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "OptionalEquipment": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/OptionalEquipment",
+                  "type": "object",
+                  "properties": {
+                    "OptionalEquipmentCost": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/OptionalEquipment/properties/OptionalEquipmentCost",
+                      "type": "number",
+                      "title": "The Optionalequipmentcost Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "OptionalEquipmentDesc": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/OptionalEquipment/properties/OptionalEquipmentDesc",
+                      "type": "string",
+                      "title": "The Optionalequipmentdesc Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "Telematic": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic",
+                  "type": "object",
+                  "properties": {
+                    "DateOfFirstInstall": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/DateOfFirstInstall",
+                      "type": "string",
+                      "title": "The Dateoffirstinstall Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "DateOfReceiptPoint": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/DateOfReceiptPoint",
+                      "type": "string",
+                      "title": "The Dateofreceiptpoint Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsTelematicInstalled": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/IsTelematicInstalled",
+                      "type": "boolean",
+                      "title": "The Istelematicinstalled Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "MileageInRelation": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/MileageInRelation",
+                      "type": "number",
+                      "title": "The Mileageinrelation Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "RemovalDate": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/RemovalDate",
+                      "type": "string",
+                      "title": "The Removaldate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ReturnRefusal": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/ReturnRefusal",
+                      "type": "string",
+                      "title": "The Returnrefusal Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ScoringPoint": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/ScoringPoint",
+                      "type": "string",
+                      "title": "The Scoringpoint Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "Vendor": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/Vendor",
+                      "type": "object",
+                      "properties": {
+                        "Name": {
+                          "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/Vendor/properties/Name",
+                          "type": "string",
+                          "title": "The Name Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "Description": {
+                          "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/Vendor/properties/Description",
+                          "type": "string",
+                          "title": "The Description Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "StartDate": {
+                          "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/Vendor/properties/StartDate",
+                          "type": "string",
+                          "title": "The Startdate Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "ValidityDate": {
+                          "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Telematic/properties/Vendor/properties/ValidityDate",
+                          "type": "string",
+                          "title": "The Validitydate Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        }
+                      }
+                    }
+                  }
+                },
+                "Credit": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Credit",
+                  "type": "object",
+                  "properties": {
+                    "IsCredit": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Credit/properties/IsCredit",
+                      "type": "boolean",
+                      "title": "The Iscredit Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "CreditBankIntegrationId": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Credit/properties/CreditBankIntegrationId",
+                      "type": "string",
+                      "title": "The Creditbankintegrationid Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "NonStandartModification": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/NonStandartModification",
+                  "type": "object",
+                  "properties": {
+                    "EngineHorsepower": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/NonStandartModification/properties/EngineHorsepower",
+                      "type": "string",
+                      "title": "The Enginehorsepower Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EnginePowerKWt": {
+                      "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/NonStandartModification/properties/EnginePowerKWt",
+                      "type": "string",
+                      "title": "The Enginepowerkwt Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    }
+                  }
+                },
+                "UsagePeriods": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/UsagePeriods",
+                  "type": "array",
+                  "items": {
+                    "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/UsagePeriods/items",
+                    "type": "object",
+                    "properties": {
+                      "StartDate": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/UsagePeriods/items/properties/StartDate",
+                        "type": "string",
+                        "title": "The Startdate Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "EndDate": {
+                        "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/UsagePeriods/items/properties/EndDate",
+                        "type": "string",
+                        "title": "The Enddate Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      }
+                    }
+                  }
+                },
+                "IsDomestic": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/IsDomestic",
+                  "type": "boolean",
+                  "title": "The Isdomestic Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "VehicleType": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/VehicleType",
+                  "type": "string",
+                  "title": "The Vehicletype Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "Category": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/Category",
+                  "type": "string",
+                  "title": "The Category Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "MaxWeight": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/MaxWeight",
+                  "type": "number",
+                  "title": "The Maxweight Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "MaxSeats": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/MaxSeats",
+                  "type": "number",
+                  "title": "The Maxseats Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                },
+                "UnladenWeight": {
+                  "id": "/properties/Deal/properties/VehicleDetails/properties/VehicleLegalInfo/properties/UnladenWeight",
+                  "type": "number",
+                  "title": "The Unladenweight Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0
+                }
+              }
+            }
+          }
+        },
+        "SetDetails": {
+          "id": "/properties/Deal/properties/SetDetails",
+          "type": "object",
+          "properties": {
+            "SetNumber": {
+              "id": "/properties/Deal/properties/SetDetails/properties/SetNumber",
+              "type": "string",
+              "title": "The Setnumber Schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "default": ""
+            },
+            "Errors": {
+              "id": "/properties/Deal/properties/SetDetails/properties/Errors",
+              "type": "array",
+              "items": {
+                "id": "/properties/Deal/properties/SetDetails/properties/Errors/items",
+                "type": "object",
+                "properties": {
+                  "Code": {
+                    "id": "/properties/Deal/properties/SetDetails/properties/Errors/items/properties/Code",
+                    "type": "string",
+                    "title": "The Code Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  },
+                  "Descr": {
+                    "id": "/properties/Deal/properties/SetDetails/properties/Errors/items/properties/Descr",
+                    "type": "string",
+                    "title": "The Descr Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": ""
+                  }
+                }
+              }
+            },
+            "SetSummary": {
+              "id": "/properties/Deal/properties/SetDetails/properties/SetSummary",
+              "type": "object",
+              "properties": {
+                "ClientSetNumber": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/ClientSetNumber",
+                  "type": "string",
+                  "title": "The Clientsetnumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "Status": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/Status",
+                  "type": "string",
+                  "title": "The Status Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "CreateDate": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/CreateDate",
+                  "type": "string",
+                  "title": "The Createdate Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "ExpiryDate": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/ExpiryDate",
+                  "type": "string",
+                  "title": "The Expirydate Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "LastUpdateDate": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/LastUpdateDate",
+                  "type": "string",
+                  "title": "The Lastupdatedate Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "IsCalcRequired": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/IsCalcRequired",
+                  "type": "boolean",
+                  "title": "The Iscalcrequired Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "IsFavorite": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/IsFavorite",
+                  "type": "boolean",
+                  "title": "The Isfavorite Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                },
+                "IsReadyForBind": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/SetSummary/properties/IsReadyForBind",
+                  "type": "boolean",
+                  "title": "The Isreadyforbind Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": false
+                }
+              }
+            },
+            "KaskoQuote": {
+              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote",
+              "type": "object",
+              "properties": {
+                "QuoteNumber": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/QuoteNumber",
+                  "type": "string",
+                  "title": "The Quotenumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "Quote": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote",
+                  "type": "object",
+                  "properties": {
+                    "Drivers": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers",
+                      "type": "object",
+                      "properties": {
+                        "UnnamedDrivers": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items",
+                            "type": "object",
+                            "properties": {
+                              "Age": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items/properties/Age",
+                                "type": "number",
+                                "title": "The Age Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              },
+                              "Experience": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items/properties/Experience",
+                                "type": "number",
+                                "title": "The Experience Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              }
+                            }
+                          }
+                        },
+                        "Multidrive": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/Multidrive",
+                          "type": "object",
+                          "properties": {
+                            "MinAge": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/Multidrive/properties/MinAge",
+                              "type": "number",
+                              "title": "The Minage Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            },
+                            "MinExperience": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/Multidrive/properties/MinExperience",
+                              "type": "number",
+                              "title": "The Minexperience Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "NamedDrivers": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items",
+                            "type": "object",
+                            "properties": {
+                              "SubjectNumber": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items/properties/SubjectNumber",
+                                "type": "number",
+                                "title": "The Subjectnumber Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              },
+                              "DrivingLicenseIssueDateOriginal": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items/properties/DrivingLicenseIssueDateOriginal",
+                                "type": "string",
+                                "title": "The Drivinglicenseissuedateoriginal Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Coverages": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages",
+                      "type": "object",
+                      "properties": {
+                        "InsuranceTerritory": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/InsuranceTerritory",
+                          "type": "string",
+                          "title": "The Insuranceterritory Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "Damage": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage",
+                          "type": "object",
+                          "properties": {
+                            "TotalDamage": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/TotalDamage",
+                              "type": "boolean",
+                              "title": "The Totaldamage Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "FullDamage": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/FullDamage",
+                              "type": "boolean",
+                              "title": "The Fulldamage Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "AccidentDamage": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/AccidentDamage",
+                              "type": "boolean",
+                              "title": "The Accidentdamage Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "UnlawfulActsOfThirdParties": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/UnlawfulActsOfThirdParties",
+                              "type": "boolean",
+                              "title": "The Unlawfulactsofthirdparties Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "Disasters": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Disasters",
+                              "type": "boolean",
+                              "title": "The Disasters Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "DamageWithoutTowing": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/DamageWithoutTowing",
+                              "type": "boolean",
+                              "title": "The Damagewithouttowing Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "RepairOptions": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/RepairOptions",
+                              "type": "string",
+                              "title": "The Repairoptions Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": ""
+                            },
+                            "Assistant": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Assistant",
+                              "type": "string",
+                              "title": "The Assistant Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": ""
+                            },
+                            "Deductible": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible",
+                              "type": "object",
+                              "properties": {
+                                "AgeAndExperience": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/AgeAndExperience",
+                                  "type": "object",
+                                  "properties": {
+                                    "Sum": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/AgeAndExperience/properties/Sum",
+                                      "type": "number",
+                                      "title": "The Sum Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": 0
+                                    },
+                                    "Type": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/AgeAndExperience/properties/Type",
+                                      "type": "string",
+                                      "title": "The Type Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": ""
+                                    }
+                                  }
+                                },
+                                "ToInsuranceRisk": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/ToInsuranceRisk",
+                                  "type": "object",
+                                  "properties": {
+                                    "Sum": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/ToInsuranceRisk/properties/Sum",
+                                      "type": "number",
+                                      "title": "The Sum Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": 0
+                                    },
+                                    "Type": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/ToInsuranceRisk/properties/Type",
+                                      "type": "string",
+                                      "title": "The Type Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": ""
+                                    }
+                                  }
+                                },
+                                "WholeVehicle": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/WholeVehicle",
+                                  "type": "object",
+                                  "properties": {
+                                    "Sum": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/WholeVehicle/properties/Sum",
+                                      "type": "number",
+                                      "title": "The Sum Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": 0
+                                    },
+                                    "Type": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/Deductible/properties/WholeVehicle/properties/Type",
+                                      "type": "string",
+                                      "title": "The Type Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": ""
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "PaymentsWithoutDocuments": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments",
+                              "type": "object",
+                              "properties": {
+                                "VehicleCostPercentage": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/VehicleCostPercentage",
+                                  "type": "number",
+                                  "title": "The Vehiclecostpercentage Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": 0
+                                },
+                                "NumberOfCases": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/NumberOfCases",
+                                  "type": "number",
+                                  "title": "The Numberofcases Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": 0
+                                },
+                                "UnlawfulActsOfThirdParties": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/UnlawfulActsOfThirdParties",
+                                  "type": "boolean",
+                                  "title": "The Unlawfulactsofthirdparties Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": false
+                                },
+                                "ListOfElements": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements",
+                                  "type": "object",
+                                  "properties": {
+                                    "Glass": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements/properties/Glass",
+                                      "type": "boolean",
+                                      "title": "The Glass Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": false
+                                    },
+                                    "Bumper": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements/properties/Bumper",
+                                      "type": "boolean",
+                                      "title": "The Bumper Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": false
+                                    },
+                                    "OneElement": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements/properties/OneElement",
+                                      "type": "boolean",
+                                      "title": "The Oneelement Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": false
+                                    },
+                                    "TwoElements": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements/properties/TwoElements",
+                                      "type": "boolean",
+                                      "title": "The Twoelements Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": false
+                                    },
+                                    "Other": {
+                                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/PaymentsWithoutDocuments/properties/ListOfElements/properties/Other",
+                                      "type": "string",
+                                      "title": "The Other Schema.",
+                                      "description": "An explanation about the purpose of this instance.",
+                                      "default": ""
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Damage/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "Theft": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Theft",
+                          "type": "object",
+                          "properties": {
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Theft/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "AdditionalEquipment": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/AdditionalEquipment",
+                          "type": "object",
+                          "properties": {
+                            "EquipmentList": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/AdditionalEquipment/properties/EquipmentList",
+                              "type": "string",
+                              "title": "The Equipmentlist Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": ""
+                            },
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/AdditionalEquipment/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "Dago": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Dago",
+                          "type": "object",
+                          "properties": {
+                            "IsDeductibleEqualToOsagoLimit": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Dago/properties/IsDeductibleEqualToOsagoLimit",
+                              "type": "boolean",
+                              "title": "The Isdeductibleequaltoosagolimit Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false
+                            },
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Dago/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "PersonalAccident": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident",
+                          "type": "object",
+                          "properties": {
+                            "CarOption": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/CarOption",
+                              "type": "object",
+                              "properties": {
+                                "InsuredSum": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/CarOption/properties/InsuredSum",
+                                  "type": "number",
+                                  "title": "The Insuredsum Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": 0
+                                }
+                              }
+                            },
+                            "SeatsOption": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/SeatsOption",
+                              "type": "object",
+                              "properties": {
+                                "DriverSeat": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/SeatsOption/properties/DriverSeat",
+                                  "type": "boolean",
+                                  "title": "The Driverseat Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": false
+                                },
+                                "FrontSeat": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/SeatsOption/properties/FrontSeat",
+                                  "type": "boolean",
+                                  "title": "The Frontseat Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": false
+                                },
+                                "Passengers": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/SeatsOption/properties/Passengers",
+                                  "type": "number",
+                                  "title": "The Passengers Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": 0
+                                },
+                                "LimitPerInsured": {
+                                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/PersonalAccident/properties/SeatsOption/properties/LimitPerInsured",
+                                  "type": "number",
+                                  "title": "The Limitperinsured Schema.",
+                                  "description": "An explanation about the purpose of this instance.",
+                                  "default": 0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Gap": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Gap",
+                          "type": "object",
+                          "properties": {
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Gap/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "TechnicalAssistance": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/TechnicalAssistance",
+                          "type": "object",
+                          "properties": {
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/TechnicalAssistance/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "Taxi": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Taxi",
+                          "type": "object",
+                          "properties": {
+                            "InsuredSum": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/Coverages/properties/Taxi/properties/InsuredSum",
+                              "type": "number",
+                              "title": "The Insuredsum Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "AdditionalInfo": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo",
+                      "type": "object",
+                      "properties": {
+                        "IsExperiencedDriver": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo/properties/IsExperiencedDriver",
+                          "type": "boolean",
+                          "title": "The Isexperienceddriver Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": false
+                        },
+                        "WeekendPolicy": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo/properties/WeekendPolicy",
+                          "type": "boolean",
+                          "title": "The Weekendpolicy Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": false
+                        },
+                        "MileageLimitations": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo/properties/MileageLimitations",
+                          "type": "object",
+                          "properties": {
+                            "Limitations": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo/properties/MileageLimitations/properties/Limitations",
+                              "type": "number",
+                              "title": "The Limitations Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            },
+                            "MilesPurchase": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/AdditionalInfo/properties/MileageLimitations/properties/MilesPurchase",
+                              "type": "number",
+                              "title": "The Milespurchase Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "TermType": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/TermType",
+                      "type": "string",
+                      "title": "The Termtype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EffectiveDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/EffectiveDate",
+                      "type": "string",
+                      "title": "The Effectivedate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ExpirationDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/ExpirationDate",
+                      "type": "string",
+                      "title": "The Expirationdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "InsurerNumber": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/InsurerNumber",
+                      "type": "number",
+                      "title": "The Insurernumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "VehicleOwnerNumber": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Quote/properties/VehicleOwnerNumber",
+                      "type": "number",
+                      "title": "The Vehicleownernumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    }
+                  }
+                },
+                "Result": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result",
+                  "type": "object",
+                  "properties": {
+                    "NonDiscountTotalPremium": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/NonDiscountTotalPremium",
+                      "type": "number",
+                      "title": "The Nondiscounttotalpremium Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "UnderwritingLights": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/UnderwritingLights",
+                      "type": "array",
+                      "items": {
+                        "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/UnderwritingLights/items",
+                        "type": "object",
+                        "properties": {
+                          "LightType": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/UnderwritingLights/items/properties/LightType",
+                            "type": "string",
+                            "title": "The Lighttype Schema.",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                          },
+                          "LightValue": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/UnderwritingLights/items/properties/LightValue",
+                            "type": "string",
+                            "title": "The Lightvalue Schema.",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": ""
+                          }
+                        }
+                      }
+                    },
+                    "CreateDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/CreateDate",
+                      "type": "string",
+                      "title": "The Createdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "PolicyStatus": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/PolicyStatus",
+                      "type": "string",
+                      "title": "The Policystatus Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsPremiumPrecision": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/IsPremiumPrecision",
+                      "type": "boolean",
+                      "title": "The Ispremiumprecision Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "TotalPremium": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/TotalPremium",
+                      "type": "number",
+                      "title": "The Totalpremium Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "Validation": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation",
+                      "type": "object",
+                      "properties": {
+                        "CurrentValidationLevel": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/CurrentValidationLevel",
+                          "type": "string",
+                          "title": "The Currentvalidationlevel Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "Parameters": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/Parameters",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/Parameters/items",
+                            "type": "object",
+                            "properties": {
+                              "ParameterName": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/Parameters/items/properties/ParameterName",
+                                "type": "string",
+                                "title": "The Parametername Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        },
+                        "ValidationItems": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items",
+                            "type": "object",
+                            "properties": {
+                              "Code": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/Code",
+                                "type": "string",
+                                "title": "The Code Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ObjectType": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ObjectType",
+                                "type": "string",
+                                "title": "The Objecttype Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ObjectId": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ObjectId",
+                                "type": "string",
+                                "title": "The Objectid Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ErrorType": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ErrorType",
+                                "type": "string",
+                                "title": "The Errortype Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "Message": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/Message",
+                                "type": "string",
+                                "title": "The Message Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ValidationLevel": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ValidationLevel",
+                                "type": "string",
+                                "title": "The Validationlevel Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "Errors": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Errors",
+                  "type": "array",
+                  "items": {
+                    "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Errors/items",
+                    "type": "object",
+                    "properties": {
+                      "Code": {
+                        "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Errors/items/properties/Code",
+                        "type": "string",
+                        "title": "The Code Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "Descr": {
+                        "id": "/properties/Deal/properties/SetDetails/properties/KaskoQuote/properties/Errors/items/properties/Descr",
+                        "type": "string",
+                        "title": "The Descr Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "OsagoQuote": {
+              "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote",
+              "type": "object",
+              "properties": {
+                "QuoteNumber": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/QuoteNumber",
+                  "type": "string",
+                  "title": "The Quotenumber Schema.",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": ""
+                },
+                "Quote": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote",
+                  "type": "object",
+                  "properties": {
+                    "IsEosago": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/IsEosago",
+                      "type": "boolean",
+                      "title": "The Iseosago Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "Drivers": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers",
+                      "type": "object",
+                      "properties": {
+                        "UnnamedDrivers": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items",
+                            "type": "object",
+                            "properties": {
+                              "ManualKBMValue": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items/properties/ManualKBMValue",
+                                "type": "number",
+                                "title": "The Manualkbmvalue Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              },
+                              "Age": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items/properties/Age",
+                                "type": "number",
+                                "title": "The Age Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              },
+                              "Experience": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/UnnamedDrivers/items/properties/Experience",
+                                "type": "number",
+                                "title": "The Experience Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              }
+                            }
+                          }
+                        },
+                        "Multidrive": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/Multidrive",
+                          "type": "object",
+                          "properties": {
+                            "ManualKBMValue": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/Multidrive/properties/ManualKBMValue",
+                              "type": "number",
+                              "title": "The Manualkbmvalue Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            },
+                            "MinAge": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/Multidrive/properties/MinAge",
+                              "type": "number",
+                              "title": "The Minage Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            },
+                            "MinExperience": {
+                              "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/Multidrive/properties/MinExperience",
+                              "type": "number",
+                              "title": "The Minexperience Schema.",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": 0
+                            }
+                          }
+                        },
+                        "NamedDrivers": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items",
+                            "type": "object",
+                            "properties": {
+                              "SubjectNumber": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items/properties/SubjectNumber",
+                                "type": "number",
+                                "title": "The Subjectnumber Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0
+                              },
+                              "DrivingLicenseIssueDateOriginal": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/Drivers/properties/NamedDrivers/items/properties/DrivingLicenseIssueDateOriginal",
+                                "type": "string",
+                                "title": "The Drivinglicenseissuedateoriginal Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "TermType": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/TermType",
+                      "type": "string",
+                      "title": "The Termtype Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "EffectiveDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/EffectiveDate",
+                      "type": "string",
+                      "title": "The Effectivedate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "ExpirationDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/ExpirationDate",
+                      "type": "string",
+                      "title": "The Expirationdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "InsurerNumber": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/InsurerNumber",
+                      "type": "number",
+                      "title": "The Insurernumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "VehicleOwnerNumber": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Quote/properties/VehicleOwnerNumber",
+                      "type": "number",
+                      "title": "The Vehicleownernumber Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    }
+                  }
+                },
+                "Result": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result",
+                  "type": "object",
+                  "properties": {
+                    "CreateDate": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/CreateDate",
+                      "type": "string",
+                      "title": "The Createdate Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "PolicyStatus": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/PolicyStatus",
+                      "type": "string",
+                      "title": "The Policystatus Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": ""
+                    },
+                    "IsPremiumPrecision": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/IsPremiumPrecision",
+                      "type": "boolean",
+                      "title": "The Ispremiumprecision Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": false
+                    },
+                    "TotalPremium": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/TotalPremium",
+                      "type": "number",
+                      "title": "The Totalpremium Schema.",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0
+                    },
+                    "Validation": {
+                      "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation",
+                      "type": "object",
+                      "properties": {
+                        "CurrentValidationLevel": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/CurrentValidationLevel",
+                          "type": "string",
+                          "title": "The Currentvalidationlevel Schema.",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": ""
+                        },
+                        "Parameters": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/Parameters",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/Parameters/items",
+                            "type": "object",
+                            "properties": {
+                              "ParameterName": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/Parameters/items/properties/ParameterName",
+                                "type": "string",
+                                "title": "The Parametername Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        },
+                        "ValidationItems": {
+                          "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems",
+                          "type": "array",
+                          "items": {
+                            "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items",
+                            "type": "object",
+                            "properties": {
+                              "Code": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/Code",
+                                "type": "string",
+                                "title": "The Code Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ObjectType": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ObjectType",
+                                "type": "string",
+                                "title": "The Objecttype Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ObjectId": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ObjectId",
+                                "type": "string",
+                                "title": "The Objectid Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ErrorType": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ErrorType",
+                                "type": "string",
+                                "title": "The Errortype Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "Message": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/Message",
+                                "type": "string",
+                                "title": "The Message Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              },
+                              "ValidationLevel": {
+                                "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Result/properties/Validation/properties/ValidationItems/items/properties/ValidationLevel",
+                                "type": "string",
+                                "title": "The Validationlevel Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": ""
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "Errors": {
+                  "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Errors",
+                  "type": "array",
+                  "items": {
+                    "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Errors/items",
+                    "type": "object",
+                    "properties": {
+                      "Code": {
+                        "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Errors/items/properties/Code",
+                        "type": "string",
+                        "title": "The Code Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      },
+                      "Descr": {
+                        "id": "/properties/Deal/properties/SetDetails/properties/OsagoQuote/properties/Errors/items/properties/Descr",
+                        "type": "string",
+                        "title": "The Descr Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "TimeZone": {
+          "id": "/properties/Deal/properties/TimeZone",
+          "type": "string",
+          "title": "The Timezone Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": ""
+        },
+        "Errors": {
+          "id": "/properties/Deal/properties/Errors",
+          "type": "array",
+          "items": {
+            "id": "/properties/Deal/properties/Errors/items",
+            "type": "object",
+            "properties": {
+              "Code": {
+                "id": "/properties/Deal/properties/Errors/items/properties/Code",
+                "type": "string",
+                "title": "The Code Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              },
+              "Descr": {
+                "id": "/properties/Deal/properties/Errors/items/properties/Descr",
+                "type": "string",
+                "title": "The Descr Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "ScanNeeds": {
+      "id": "/properties/ScanNeeds",
+      "type": "array",
+      "items": {
+        "id": "/properties/ScanNeeds/items",
+        "type": "object",
+        "properties": {
+          "Type": {
+            "id": "/properties/ScanNeeds/items/properties/Type",
+            "type": "string",
+            "title": "The Type Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "FirstPage": {
+            "id": "/properties/ScanNeeds/items/properties/FirstPage",
+            "type": "string",
+            "title": "The Firstpage Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "SecondPage": {
+            "id": "/properties/ScanNeeds/items/properties/SecondPage",
+            "type": "string",
+            "title": "The Secondpage Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+          },
+          "SubjectNumber": {
+            "id": "/properties/ScanNeeds/items/properties/SubjectNumber",
+            "type": "number",
+            "title": "The Subjectnumber Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+framework module TISDK {
+  umbrella header "TISDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TISDK.Swift {
+    header "TISDK-Swift.h"
+    requires objc
+}
