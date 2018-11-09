@@ -7,7 +7,7 @@ Tinkoff Insurance SDK helps you buy OSAGO or KACKO insurance policies online in 
                        DESC
 
   s.homepage         = 'https://www.tinkoff.ru'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => "Apache 2.0", :file => "TISDK/LICENSE" }
   s.author           = { 'Vasilenko Igor Vladimirovich' => 'i.v.vasilenko@tinkoff.ru' }
   s.source           = { :http => "https://github.com/TinkoffCreditSystems/tisdk-ios/releases/download/#{s.version}/TISDK.zip" }
 
