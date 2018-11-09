@@ -14,7 +14,7 @@ Tinkoff Insurance SDK helps you buy OSAGO or KACKO insurance policies online in 
   s.platform = :ios
   s.requires_arc = true
   s.ios.deployment_target = '9.0'
-  s.frameworks = ['UIKit', 'PassKit', 'AVFoundation', 'CoreText', 'CommonCrypto', 'Security']
+  s.frameworks = ['UIKit', 'PassKit', 'AVFoundation', 'CoreText', 'Security']
   s.library = 'c++'  
   s.pod_target_xcconfig = {
        'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
@@ -25,13 +25,11 @@ Tinkoff Insurance SDK helps you buy OSAGO or KACKO insurance policies online in 
 
   s.public_header_files = 'TISDK.framework/Headers/TISDK.h', 
                           'TISDK.framework/Headers/TIInsurance.h', 
-                          'TISDK.framework/Headers/TIPolicyInfo.h', 
-                          'TISDK.framework/Headers/TIAnalyticsResolver.h'
+                          'TISDK.framework/Headers/TIPolicyInfo.h'
 
   s.source_files        = 'TISDK.framework/Headers/TISDK.h', 
                           'TISDK.framework/Headers/TIInsurance.h', 
-                          'TISDK.framework/Headers/TIPolicyInfo.h', 
-                          'TISDK.framework/Headers/TIAnalyticsResolver.h'
+                          'TISDK.framework/Headers/TIPolicyInfo.h'
                           
   s.vendored_frameworks = 'TISDK.framework'
 
