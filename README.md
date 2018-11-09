@@ -55,7 +55,7 @@ ReleaseQA - staging
 Для открытия формы для короткой заявки на КАСКО предназначен следующий метод:
 
 ```objective-c
-+ (void)buyKACKOInViewController:(UIViewController *)viewController;
+- (void)buyKACKOInViewController:(UIViewController *)viewController;
 ```
 
 @param viewController - viewController, который будет презентовать форму расчета стоимости полиса.
