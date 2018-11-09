@@ -1,6 +1,6 @@
 # Tinkoff Insurance SDK for iOS
 
-SDK, который позволяет клиенту оформить ОСАГО или каско за 5 минут
+Позволяет клиенту оформить ОСАГО или КАСКО за 5 минут!
 
 ## Установка
 
@@ -47,8 +47,10 @@ ReleaseQA - staging
 - (void)buyOSAGOInViewController:(UIViewController *)viewController completionBlock:(void (^ _Nullable)(TIPolicyInfo *))completionBlock;
 ```
 
-@param viewController - UIViewController, который будет презентовать форму оформления полиса.
-@param completionBlock - при успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе.
+| Параметр        | Описание                                                                               |
+|-----------------|----------------------------------------------------------------------------------------|
+| viewController  | UIViewController, который будет презентовать форму оформления полиса                   |
+| completionBlock | При успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе |
 
 ### Оформление КАСКО
 
@@ -58,7 +60,9 @@ ReleaseQA - staging
 - (void)buyKACKOInViewController:(UIViewController *)viewController;
 ```
 
-@param viewController - viewController, который будет презентовать форму расчета стоимости полиса.
+| Параметр        | Описание                                                                               |
+|-----------------|----------------------------------------------------------------------------------------|
+| viewController  | UIViewController, который будет презентовать форму оформления полиса                   |
 
 ## Поддержка
 
