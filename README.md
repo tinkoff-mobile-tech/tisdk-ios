@@ -18,7 +18,7 @@ pod "TISDK"
 <key>environment</key>
 <string>$(TISDK_ENVIRONMENT)</string>
 <key>origin</key>
-<string>fines</string>
+<string>origin</string>
 </dict>
 ```
 - **origin** - предоставленный для вас идентификатор
