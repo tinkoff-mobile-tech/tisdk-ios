@@ -10,13 +10,35 @@
 
 ## Установка
 
-1. Установить SDK в проект посредством [CocoaPods](http://cocoapods.org).
+TISDK поддерживает версии iOS 9, 10, 11 & 12.
+
+### 1. Установить SDK в проект следующими способами
+
+#### Cocoapods
+
+Добавьте в ваш Podfile и вызовите `pod install`
 
 ```ruby
 pod 'TISDK'
 ```
 
-2. Добавить в Info.plist проекта необходимую конфигурацию для работы с SDK:
+#### Carhage
+
+1. Добавьте `github "TinkoffCreditSystems/tisdk-ios"` в ваш Cartfile.
+2. Вызовите `carthage update` в терминале.
+3. Перейдите во вкладку "General Settings" в вашем проекте . Перенесите `TISDK.framework` из папки `Carthage/Build/iOS` в секцию "Embedded Binaries". Проверьте, что стоит флаг “Copy items if needed”.
+
+#### Manual установка
+
+1. [Скачайте TISDK for iOS](https://github.com/TinkoffCreditSystems/tisdk-ios/archive/master.zip) и распакуйте архив.
+2. Перейдите во вкладку "General Settings" в вашем проекте . Перенесите `TISDK.framework` из папки `Carthage/Build/iOS` в секцию "Embedded Binaries". Проверьте, что стоит флаг “Copy items if needed”.
+3. Добавьте новый "Run Script Phase" в таргет вашего проекта во вкладке "Build Phases" и вставьте следующий скрипт: 
+`bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/TISDK.framework/strip-frameworks.sh"`
+Данный шаг важен для ворк-эраунда [App Store submission bug](http://www.openradar.me/radar?id=6409498411401216) при архивировании универсального фреймворка.
+
+### 2. Обновите Info.plist
+
+#### 1. Конфигурация SDK
 
 ```json
 <key>TISDK</key>
@@ -33,7 +55,16 @@ pod 'TISDK'
 | origin          | Идентификатор вашего приложения                                                        |
 | environment     | это текущее окружение (staging или production). В соответствии с примером $(TISDK_ENVIRONMENT) - это User-Define переменная из Build Settings проекта.                                                       |
 
-3. Настроить окружение для конфигурации SDK требуется только один раз, для этого нужно добавить User-Define переменную с именем TISDK_ENVIRONMENT, если брать из примера. Затем определить окружение для конкретной конфигурации проекта.
+#### 2. Для корректной работы SDK требуются permissions для использования камеры и фото-библиотеки
+
+```json
+<key>NSCameraUsageDescription</key>
+<string>Разрешите пожалуйста доступ для загрузки документов</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Разрешите пожалуйста доступ для загрузки документов</string>
+```
+
+### 3. Настроить окружение для конфигурации SDK требуется только один раз, для этого нужно добавить User-Define переменную с именем TISDK_ENVIRONMENT, если брать из примера. Затем определить окружение для конкретной конфигурации проекта.
 
 Например:
 
