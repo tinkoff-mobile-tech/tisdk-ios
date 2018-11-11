@@ -13,7 +13,7 @@
 1. Установить SDK в проект посредством [CocoaPods](http://cocoapods.org).
 
 ```ruby
-pod "TISDK"
+pod 'TISDK'
 ```
 
 2. Добавить в Info.plist проекта необходимую конфигурацию для работы с SDK:
