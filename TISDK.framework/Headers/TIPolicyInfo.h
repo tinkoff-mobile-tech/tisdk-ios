@@ -12,8 +12,14 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 #import <Foundation/Foundation.h>
+
+@class TIVehicleLicense;
+@class TIDriverLicense;
+@class TIVehicleComponents;
+@class TIFioSuggestData;
+
+@protocol TIVehicleComponent;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -30,31 +36,66 @@ typedef NS_ENUM(NSUInteger, TIPolicyType) {
  */
 __attribute__((objc_subclassing_restricted))
 @interface TIPolicyInfo : NSObject
-
+/**
+ * Email страхователя
+ */
+@property (strong, nonatomic, nonnull) NSString *email;
+/**
+ * Мобильный телефон страхователя
+ */
+@property (strong, nonatomic, nonnull) NSString *phone;
+/**
+ * ФИО страхователя
+ */
+@property (strong, nonatomic, nonnull) TIFioSuggestData *insurerFio;
+/**
+ * ФИО владельца
+ */
+@property (strong, nonatomic, nonnull) TIFioSuggestData *ownerFio;
+/**
+ * Название страховой компании
+ */
+@property (strong, nonatomic, nonnull) NSString *insuranceCompanyTitle;
+/**
+ * Номер страхового полиса
+ */
+@property (strong, nonatomic, nonnull) NSString *policyNumber;
 /**
  * Тип полиса
  */
-@property (assign, nonatomic, readonly) TIPolicyType type;
+@property (assign, nonatomic) TIPolicyType type;
 /**
  * Дата начала действия полиса
  */
-@property (strong, nonatomic, readonly) NSDate *effectiveDate;
+@property (strong, nonatomic, nonnull) NSDate *effectiveDate;
 /**
  * Дата окончания действия полиса
  */
-@property (strong, nonatomic, readonly) NSDate *expireDate;
+@property (strong, nonatomic, nonnull) NSDate *expireDate;
 /**
  * Номер заказа
  */
-@property (copy, nonatomic, readonly) NSString *orderId;
+@property (copy, nonatomic, nonnull) NSString *orderId;
 /**
- * Серия и номер СТС (если был выбран СТС в качестве документа авто)
+ * Массив ВУ. Опциональный массив т.к. в случае страховки без ограничений, пользователь не вводил ни одного ВУ.
  */
-@property (copy, nonatomic, readonly, nullable) NSString *seriesAndNumberCTC;
+@property (strong, nonatomic, nullable) NSArray <TIDriverLicense *> *driverLicenses;
 /**
- * Серия и номер ПТС (если был выбран ПТС в качестве документа авто)
+ * Номер CТС
  */
-@property (copy, nonatomic, readonly, nullable) NSString *seriesAndNumberPTC;
+@property (copy, nonatomic, nullable) NSString *vehicleLicenseNumber;
+/**
+ * Номер ПТС
+ */
+@property (copy, nonatomic, nullable) NSString *ptsNumber;
+/**
+ * Регистрационный знак ТС
+ */
+@property (copy, nonatomic, nonnull) NSString *licensePlateNumber;
+/**
+ * Информация об автомобиле
+ */
+@property (strong, nonatomic, nonnull) TIVehicleComponents *vehicleComponents;
 
 @end
 
