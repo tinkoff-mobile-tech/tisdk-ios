@@ -12,6 +12,7 @@ Tinkoff Insurance SDK helps you buy OSAGO or KACKO insurance policies online in 
   s.source           = { :http => "https://github.com/TinkoffCreditSystems/tisdk-ios/releases/download/#{s.version}/TISDK.zip" }
 
   s.platform = :ios
+  s.swift_version = '4.0'
   s.ios.deployment_target = '9.0'
   s.frameworks = ['UIKit', 'PassKit', 'AVFoundation', 'CoreText', 'Security']
   s.library = 'c++'
