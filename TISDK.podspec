@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TISDK'
-  s.version          = '1.3.1'
+  s.version          = '1.4.0'
   s.summary          = 'Tinkoff Insurance SDK'
   s.description      = <<-DESC
 Tinkoff Insurance SDK helps you buy OSAGO or KACKO insurance policies online in 5 minutes!

@@ -43,17 +43,14 @@ pod 'TISDK'
 ```json
 <key>TISDK</key>
 <dict>
-<key>environment</key>
-<string>$(TISDK_ENVIRONMENT)</string>
-<key>origin</key>
-<string>origin</string>
+<key>partnerID</key>
+<string>your_unique_identifier</string>
 </dict>
 ```
 
 | Ключ            | Описание                                                                               |
 |-----------------|----------------------------------------------------------------------------------------|
-| origin          | Идентификатор вашего приложения                                                        |
-| environment     | это текущее окружение (staging или production). В соответствии с примером $(TISDK_ENVIRONMENT) - это User-Define переменная из Build Settings проекта.                                                       |
+| partnerID          | Идентификатор вашего приложения на нашем сервере.                         |
 
 #### 2. Для корректной работы SDK требуются permissions для использования камеры и фото-библиотеки
 
@@ -62,19 +59,6 @@ pod 'TISDK'
 <string>Разрешите пожалуйста доступ для загрузки документов</string>
 <key>NSPhotoLibraryUsageDescription</key>
 <string>Разрешите пожалуйста доступ для загрузки документов</string>
-```
-
-### 3. Настройте окружение для конфигурации SDK
-
-Для этого нужно добавить User-Define переменную с именем `TISDK_ENVIRONMENT`, которую вы использовали при добавлении в Info.plist в пункте 2.1, если брать из примера. Затем определить окружение для конкретной конфигурации проекта.
-
-Например:
-
-```json
-Debug - production
-DebugQA - staging
-Release - production
-ReleaseQA - staging
 ```
 
 ## Использование
