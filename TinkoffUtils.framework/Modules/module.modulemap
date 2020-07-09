@@ -1,0 +1,11 @@
+framework module TinkoffUtils {
+  umbrella header "TinkoffUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TinkoffUtils.Swift {
+    header "TinkoffUtils-Swift.h"
+    requires objc
+}

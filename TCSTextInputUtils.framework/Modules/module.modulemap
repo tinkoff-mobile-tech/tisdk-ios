@@ -1,0 +1,11 @@
+framework module TCSTextInputUtils {
+  umbrella header "TCSTextInputUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TCSTextInputUtils.Swift {
+    header "TCSTextInputUtils-Swift.h"
+    requires objc
+}

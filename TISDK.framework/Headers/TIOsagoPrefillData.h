@@ -10,10 +10,13 @@
 @class TIVehicleComponents;
 
 NS_SWIFT_NAME(OsagoPrefillData)
+/**
+ * Данные для предзаполнения полей при покупке полиса "ОСАГО"
+ */
 @interface TIOsagoPrefillData : NSObject
 
 /**
- * Компоненты автомобиля(марка, модель, год выпуска, кузов, коробка передач, двигатель)
+ * Компоненты автомобиля (марка, модель, год выпуска, кузов, коробка передач, двигатель)
  */
 @property (strong, nonatomic, nullable) TIVehicleComponents *vehicleComponents;
 
@@ -23,7 +26,7 @@ NS_SWIFT_NAME(OsagoPrefillData)
 @property (copy, nonatomic, nullable) NSString *registrationNumber;
 
 /**
- * Номер СТС.
+ * Номер СТС
  */
 @property (copy, nonatomic, nullable) NSString *documentSeriesNumber;
 
@@ -43,10 +46,16 @@ NS_SWIFT_NAME(OsagoPrefillData)
 @property (copy, nonatomic, nullable) NSString *email;
 
 /**
- * ФИО пользователя
+ * Фамилия водителя
  */
 @property (copy, nonatomic, nullable) NSString *lastName;
+/**
+ * Имя водителя
+ */
 @property (copy, nonatomic, nullable) NSString *firstName;
+/**
+ * Отчество водителя
+ */
 @property (copy, nonatomic, nullable) NSString *patronymic;
 
 @end

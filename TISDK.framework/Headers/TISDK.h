@@ -21,3 +21,4 @@ FOUNDATION_EXPORT const unsigned char TISDKVersionString[];
 #import "TIVehicleComponents.h"
 #import "TIOsagoPrefillData.h"
 #import "TIInsuranceResult.h"
+#import "TIVehicleComponent.h"

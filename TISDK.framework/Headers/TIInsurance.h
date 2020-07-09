@@ -18,10 +18,15 @@
 @class UIViewController;
 @class TIInsuranceResult;
 @class TIOsagoPrefillData;
+@class TIKackoPrefillData;
 
 NS_ASSUME_NONNULL_BEGIN
 
 __attribute__((objc_subclassing_restricted))
+
+/**
+ * Основная точка входа в SDK
+ */
 @interface TIInsurance : NSObject
 
 /**
@@ -31,17 +36,17 @@ __attribute__((objc_subclassing_restricted))
 
 /**
  * Оформление страхового полиса "ОСАГО"
- * @param viewController - UIViewController, который будет презентовать форму оформления полиса.
- * @param completionBlock - при успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе.
+ * @param viewController UIViewController, который будет презентовать форму оформления полиса.
+ * @param completionBlock При успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе.
  */
 - (void)buyOSAGOInViewController:(UIViewController *)viewController
                  completionBlock:(void (^ _Nullable)(TIInsuranceResult *))completionBlock;
 
 /**
  * Оформление страхового полиса "ОСАГО"
- * @param viewController - UIViewController, который будет презентовать форму оформления полиса.
- * @param prefillData - объект TIOsagoPrefillData, который содержит данные для предзаполнения полей.
- * @param completionBlock - при успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе.
+ * @param viewController UIViewController, который будет презентовать форму оформления полиса.
+ * @param prefillData Объект `TIOsagoPrefillData`, который содержит данные для предзаполнения полей.
+ * @param completionBlock При успешной покупке полиса, в блоке будет возвращен оъект `TIInsuranceResult` с информацией о покупке.
  */
 - (void)buyOSAGOInViewController:(UIViewController *)viewController
                      prefillData:(TIOsagoPrefillData *)prefillData
@@ -49,9 +54,9 @@ __attribute__((objc_subclassing_restricted))
 
 /**
  * Продление страхового полиса "ОСАГО"
- * @param viewController - UIViewController, который будет презентовать форму оформления полиса.
- * @param documentSeriesNumber - Номер СТС.
- * @param completionBlock - при успешной покупке полиса, в блоке будет возвращена информация об оформленном полисе.
+ * @param viewController UIViewController, который будет презентовать форму оформления полиса.
+ * @param documentSeriesNumber Номер СТС.
+ * @param completionBlock При успешной покупке полиса, в блоке будет возвращен оъект `TIInsuranceResult` с информацией о покупке.
  */
 - (void)renewOSAGOInViewController:(UIViewController *)viewController
               documentSeriesNumber:(NSString *)documentSeriesNumber
@@ -59,9 +64,17 @@ __attribute__((objc_subclassing_restricted))
 
 /**
  * Заявка на расчет стоимости страхового полиса "КАСКО"
- * @param viewController - viewController, который будет презентовать форму расчета стоимости полиса.
+ * @param viewController ViewController, который будет презентовать форму расчета стоимости полиса.
  */
 - (void)buyKACKOInViewController:(UIViewController *)viewController;
+
+/**
+ * Заявка на расчет стоимости страхового полиса "КАСКО"
+ * @param viewController ViewController, который будет презентовать форму расчета стоимости полиса.
+ * @param prefillData Объект `TIKackoPrefillData`, который содержит данные для предзаполнения полей.
+ */
+- (void)buyKACKOInViewController:(UIViewController *)viewController
+                     prefillData:(TIKackoPrefillData *)prefillData;
 
 @end
 

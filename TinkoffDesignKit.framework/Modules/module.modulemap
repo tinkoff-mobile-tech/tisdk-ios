@@ -1,0 +1,11 @@
+framework module TinkoffDesignKit {
+  umbrella header "TinkoffDesignKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TinkoffDesignKit.Swift {
+    header "TinkoffDesignKit-Swift.h"
+    requires objc
+}

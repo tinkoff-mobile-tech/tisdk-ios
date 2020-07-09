@@ -27,8 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
  * Тип полиса
  */
 typedef NS_ENUM(NSUInteger, TIPolicyType) {
-    TIPolicyTypeOSAGO /* ОСАГО */,
-    TIPolicyTypeKACKO /* КАСКО */
+    /**
+     * ОСАГО
+     */
+    TIPolicyTypeOSAGO,
+    /**
+     * КАСКО
+     */
+    TIPolicyTypeKACKO 
 };
 
 /**
